@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storislar - Neon Qo'shiq</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #0d0d0d;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+            text-align: center;
+            box-shadow: 0 0 20px #ff00ff;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff, 0 0 30px #ff00ff;
+            margin: 0;
+        }
+
+        .storis {
+            margin: 20px;
+            font-size: 1.2rem;
+            color: #00ffff;
+            text-align: center;
+            text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff;
+        }
+
+        .player {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        audio {
+            outline: none;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #0d0d0d;
+            background: linear-gradient(90deg, #ff00ff, #00ffff);
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #00ffff;
+            transition: 0.3s;
+        }
+
+        .download-btn:hover {
+            box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Storislar</h1>
+    </header>
+
+    <div class="storis">
+        <p>Qoʻshiqni doʻstlaringiz bilan ulashing.<br>10.02.2026 sanada oʻchirib tashlanadi</p>
+    </div>
+
+    <div class="player">
+        <audio controls>
+            <source src="storislar_aud1.mp3" type="audio/mpeg">
+            Sizning brauzeringiz audio tagini qo'llab-quvvatlamaydi.
+        </audio>
+        <br>
+        <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" download class="download-btn">Yuklab olish</a>
+    </div>
+
+</body>
+</html>
